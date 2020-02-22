@@ -15,6 +15,7 @@
 		52C8FB6B24010F3A00C08A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C8FB6924010F3A00C08A5F /* LaunchScreen.storyboard */; };
 		52C8FB742401185700C08A5F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB732401185700C08A5F /* Helper.swift */; };
 		52C8FB7524011BEB00C08A5F /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C8FB72240117CD00C08A5F /* model.json */; };
+		52C8FB782401222100C08A5F /* ButtonAnimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB772401222100C08A5F /* ButtonAnimaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		52C8FB6C24010F3A00C08A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C8FB72240117CD00C08A5F /* model.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
 		52C8FB732401185700C08A5F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		52C8FB772401222100C08A5F /* ButtonAnimaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		52C8FB5D24010F3700C08A5F /* UIComplete */ = {
 			isa = PBXGroup;
 			children = (
+				52C8FB76240121EF00C08A5F /* Animation */,
 				52C8FB5E24010F3700C08A5F /* AppDelegate.swift */,
 				52C8FB6024010F3700C08A5F /* SceneDelegate.swift */,
 				52C8FB6224010F3700C08A5F /* ViewController.swift */,
@@ -71,6 +74,14 @@
 				52C8FB6C24010F3A00C08A5F /* Info.plist */,
 			);
 			path = UIComplete;
+			sourceTree = "<group>";
+		};
+		52C8FB76240121EF00C08A5F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				52C8FB772401222100C08A5F /* ButtonAnimaViewController.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */,
 				52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */,
 				52C8FB742401185700C08A5F /* Helper.swift in Sources */,
+				52C8FB782401222100C08A5F /* ButtonAnimaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,12 @@
 [
     {
-        "title" : "eleastictiy",
-        "class" : "ElasticityViewController"
+        "title" : "动画",
+        "sub" : [
+            {
+                "title" : "动画弹出按钮",
+                "class" : "ButtonAnimaViewController"
+            },
+        ]
     },
     {
         "title" : "collectionTest",
