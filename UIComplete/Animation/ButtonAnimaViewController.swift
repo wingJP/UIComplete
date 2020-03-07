@@ -12,11 +12,26 @@ class ButtonAnimaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initSubView()
         // Do any additional setup after loading the view.
     }
     
-
+    
+    private var scrollView = UIScrollView()
+    
+    func initSubView() {
+        self.view.addSubview(scrollView)
+        //        scrollView.delegate = self
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.clipsToBounds = false
+        scrollView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self)
+        }
+        
+        reloadData()
+    }
+    
     /*
     // MARK: - Navigation
 

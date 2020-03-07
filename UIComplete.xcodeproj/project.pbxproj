@@ -16,9 +16,13 @@
 		52C8FB742401185700C08A5F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB732401185700C08A5F /* Helper.swift */; };
 		52C8FB7524011BEB00C08A5F /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C8FB72240117CD00C08A5F /* model.json */; };
 		52C8FB782401222100C08A5F /* ButtonAnimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB772401222100C08A5F /* ButtonAnimaViewController.swift */; };
+		52C8FB7B2413E23A00C08A5F /* WAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB7A2413E23A00C08A5F /* WAColor.swift */; };
+		52C8FB7D2413E25F00C08A5F /* WAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB7C2413E25F00C08A5F /* WAString.swift */; };
+		6D86A770F7A06BDAD146FB5C /* libPods-UIComplete.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A23EB3E047FE632F312A3F /* libPods-UIComplete.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1975E42C0FB23297D5B7ABC8 /* Pods-UIComplete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComplete.debug.xcconfig"; path = "Target Support Files/Pods-UIComplete/Pods-UIComplete.debug.xcconfig"; sourceTree = "<group>"; };
 		52C8FB5B24010F3700C08A5F /* UIComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8FB5E24010F3700C08A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C8FB6024010F3700C08A5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,10 @@
 		52C8FB72240117CD00C08A5F /* model.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
 		52C8FB732401185700C08A5F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		52C8FB772401222100C08A5F /* ButtonAnimaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimaViewController.swift; sourceTree = "<group>"; };
+		52C8FB7A2413E23A00C08A5F /* WAColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAColor.swift; sourceTree = "<group>"; };
+		52C8FB7C2413E25F00C08A5F /* WAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAString.swift; sourceTree = "<group>"; };
+		66A23EB3E047FE632F312A3F /* libPods-UIComplete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIComplete.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		845179CFF6AF374CA285A321 /* Pods-UIComplete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComplete.release.xcconfig"; path = "Target Support Files/Pods-UIComplete/Pods-UIComplete.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D86A770F7A06BDAD146FB5C /* libPods-UIComplete.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,8 @@
 				52C8FB72240117CD00C08A5F /* model.json */,
 				52C8FB5D24010F3700C08A5F /* UIComplete */,
 				52C8FB5C24010F3700C08A5F /* Products */,
+				AEA1629875B5E4A2644EA9C0 /* Pods */,
+				7B409D9270DD4B017656BBCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +75,7 @@
 		52C8FB5D24010F3700C08A5F /* UIComplete */ = {
 			isa = PBXGroup;
 			children = (
+				52C8FB792413E22200C08A5F /* Tool */,
 				52C8FB76240121EF00C08A5F /* Animation */,
 				52C8FB5E24010F3700C08A5F /* AppDelegate.swift */,
 				52C8FB6024010F3700C08A5F /* SceneDelegate.swift */,
@@ -84,6 +96,32 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		52C8FB792413E22200C08A5F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				52C8FB7A2413E23A00C08A5F /* WAColor.swift */,
+				52C8FB7C2413E25F00C08A5F /* WAString.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7B409D9270DD4B017656BBCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66A23EB3E047FE632F312A3F /* libPods-UIComplete.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEA1629875B5E4A2644EA9C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1975E42C0FB23297D5B7ABC8 /* Pods-UIComplete.debug.xcconfig */,
+				845179CFF6AF374CA285A321 /* Pods-UIComplete.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C8FB6F24010F3A00C08A5F /* Build configuration list for PBXNativeTarget "UIComplete" */;
 			buildPhases = (
+				E7A7ABE09533E00B22F28DEB /* [CP] Check Pods Manifest.lock */,
 				52C8FB5724010F3700C08A5F /* Sources */,
 				52C8FB5824010F3700C08A5F /* Frameworks */,
 				52C8FB5924010F3700C08A5F /* Resources */,
@@ -151,12 +190,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E7A7ABE09533E00B22F28DEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIComplete-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52C8FB5724010F3700C08A5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C8FB7D2413E25F00C08A5F /* WAString.swift in Sources */,
 				52C8FB6324010F3700C08A5F /* ViewController.swift in Sources */,
+				52C8FB7B2413E23A00C08A5F /* WAColor.swift in Sources */,
 				52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */,
 				52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */,
 				52C8FB742401185700C08A5F /* Helper.swift in Sources */,
@@ -302,6 +368,7 @@
 		};
 		52C8FB7024010F3A00C08A5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1975E42C0FB23297D5B7ABC8 /* Pods-UIComplete.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +386,7 @@
 		};
 		52C8FB7124010F3A00C08A5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845179CFF6AF374CA285A321 /* Pods-UIComplete.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
