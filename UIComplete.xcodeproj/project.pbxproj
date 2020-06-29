@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5271F2E824AA373000DF51E6 /* Tool.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5271F2E724AA373000DF51E6 /* Tool.storyboard */; };
+		5271F2EA24AA380A00DF51E6 /* UserDefineSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271F2E924AA380A00DF51E6 /* UserDefineSwitchViewController.swift */; };
+		5271F2EC24AA3A9600DF51E6 /* UserDefineSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271F2EB24AA3A9600DF51E6 /* UserDefineSwitch.swift */; };
 		52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB5E24010F3700C08A5F /* AppDelegate.swift */; };
 		52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB6024010F3700C08A5F /* SceneDelegate.swift */; };
 		52C8FB6324010F3700C08A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB6224010F3700C08A5F /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		1975E42C0FB23297D5B7ABC8 /* Pods-UIComplete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComplete.debug.xcconfig"; path = "Target Support Files/Pods-UIComplete/Pods-UIComplete.debug.xcconfig"; sourceTree = "<group>"; };
+		5271F2E724AA373000DF51E6 /* Tool.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tool.storyboard; sourceTree = "<group>"; };
+		5271F2E924AA380A00DF51E6 /* UserDefineSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefineSwitchViewController.swift; sourceTree = "<group>"; };
+		5271F2EB24AA3A9600DF51E6 /* UserDefineSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefineSwitch.swift; sourceTree = "<group>"; };
 		52C8FB5B24010F3700C08A5F /* UIComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8FB5E24010F3700C08A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C8FB6024010F3700C08A5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5271F2E524AA367200DF51E6 /* ToolVC */ = {
+			isa = PBXGroup;
+			children = (
+				5271F2E924AA380A00DF51E6 /* UserDefineSwitchViewController.swift */,
+			);
+			path = ToolVC;
+			sourceTree = "<group>";
+		};
 		52C8FB5224010F3700C08A5F = {
 			isa = PBXGroup;
 			children = (
@@ -75,12 +89,14 @@
 		52C8FB5D24010F3700C08A5F /* UIComplete */ = {
 			isa = PBXGroup;
 			children = (
+				5271F2E524AA367200DF51E6 /* ToolVC */,
 				52C8FB792413E22200C08A5F /* Tool */,
 				52C8FB76240121EF00C08A5F /* Animation */,
 				52C8FB5E24010F3700C08A5F /* AppDelegate.swift */,
 				52C8FB6024010F3700C08A5F /* SceneDelegate.swift */,
 				52C8FB6224010F3700C08A5F /* ViewController.swift */,
 				52C8FB6424010F3700C08A5F /* Main.storyboard */,
+				5271F2E724AA373000DF51E6 /* Tool.storyboard */,
 				52C8FB6724010F3A00C08A5F /* Assets.xcassets */,
 				52C8FB6924010F3A00C08A5F /* LaunchScreen.storyboard */,
 				52C8FB6C24010F3A00C08A5F /* Info.plist */,
@@ -101,6 +117,7 @@
 			children = (
 				52C8FB7A2413E23A00C08A5F /* WAColor.swift */,
 				52C8FB7C2413E25F00C08A5F /* WAString.swift */,
+				5271F2EB24AA3A9600DF51E6 /* UserDefineSwitch.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -181,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5271F2E824AA373000DF51E6 /* Tool.storyboard in Resources */,
 				52C8FB7524011BEB00C08A5F /* model.json in Resources */,
 				52C8FB6B24010F3A00C08A5F /* LaunchScreen.storyboard in Resources */,
 				52C8FB6824010F3A00C08A5F /* Assets.xcassets in Resources */,
@@ -222,6 +240,8 @@
 			files = (
 				52C8FB7D2413E25F00C08A5F /* WAString.swift in Sources */,
 				52C8FB6324010F3700C08A5F /* ViewController.swift in Sources */,
+				5271F2EA24AA380A00DF51E6 /* UserDefineSwitchViewController.swift in Sources */,
+				5271F2EC24AA3A9600DF51E6 /* UserDefineSwitch.swift in Sources */,
 				52C8FB7B2413E23A00C08A5F /* WAColor.swift in Sources */,
 				52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */,
 				52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */,

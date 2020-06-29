@@ -9,8 +9,14 @@
         ]
     },
     {
-        "title" : "collectionTest",
-        "class" : "collectionViewController"
+        "title" : "工具",
+        "sub" : [
+            {
+                "title" : "开关记录",
+                "storyboard" : "Tool",
+                "class" : "UserDefineSwitchViewController"
+            },
+        ]
     },
     {
         "title" : "collectionTest",

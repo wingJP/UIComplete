@@ -22,9 +22,11 @@ class ViewController: UITableViewController {
             cellArray = arr
             self.tableView.reloadData()
         }
+        self.tableView.tableFooterView = UIView()
+        
     }
-
-     static func new(array: [[String: Any?]]) -> ViewController? {
+    
+    static func new(array: [[String: Any?]]) -> ViewController? {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         if let ac = storyBoard.instantiateViewController(withIdentifier: "ViewController") as?  ViewController {
             ac.cellArray = array
@@ -32,7 +34,7 @@ class ViewController: UITableViewController {
         }
         return nil
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -54,7 +56,13 @@ class ViewController: UITableViewController {
         guard let title = cellArray[indexPath.row]["title"] as? String else {
             return
         }
-        if let className = cellArray[indexPath.row]["class"] as? String ,
+        if let sbName = cellArray[indexPath.row]["storyboard"] as? String,
+            let className = cellArray[indexPath.row]["class"] as? String,
+            let vc = getViewController(name: className, storyboard: sbName) {
+            vc.title = title
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if let className = cellArray[indexPath.row]["class"] as? String,
             let vc = getViewController(name: className){
             vc.title = title
             self.navigationController?.pushViewController(vc, animated: true)
@@ -76,6 +84,12 @@ class ViewController: UITableViewController {
         }
         
         let vc : UIViewController = type.init()
+        return vc
+    }
+    
+    func getViewController(name : String, storyboard : String) -> UIViewController? {
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: name)
         return vc
     }
     

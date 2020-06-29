@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Define Switch View Controller-->
+        <scene sceneID="e5l-WZ-ZHz">
+            <objects>
+                <viewController storyboardIdentifier="UserDefineSwitchViewController" id="JLq-4X-Uz3" customClass="UserDefineSwitchViewController" customModule="UIComplete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vei-NK-Jhu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="TCk-fI-9kj">
+                                <rect key="frame" x="63.5" y="104" width="287.5" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sz-t6-fCt">
+                                        <rect key="frame" x="0.0" y="0.0" width="287.5" height="61"/>
+                                        <string key="text">使用enum记录开关动作
+只需继承UserDefaultsSwitchable协议
+使用位位运算记录在userdefines中</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lR8-jt-KE5">
+                                        <rect key="frame" x="0.0" y="89" width="256" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80I-kJ-9dk">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="JLq-4X-Uz3" eventType="valueChanged" id="RvP-tM-sLJ"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1y-Xn-zX2">
+                                                <rect key="frame" x="69" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="JLq-4X-Uz3" eventType="valueChanged" id="pU7-Zj-KYI"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGo-Ba-kvT">
+                                                <rect key="frame" x="138" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="JLq-4X-Uz3" eventType="valueChanged" id="Tsw-oi-f6C"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-8x-4eJ">
+                                                <rect key="frame" x="207" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="JLq-4X-Uz3" eventType="valueChanged" id="Okb-jm-hNE"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TCk-fI-9kj" firstAttribute="centerX" secondItem="vei-NK-Jhu" secondAttribute="centerX" id="dkI-CU-iG2"/>
+                            <constraint firstItem="TCk-fI-9kj" firstAttribute="top" secondItem="whh-Nd-Rhs" secondAttribute="top" constant="60" id="qYk-fH-HJe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="whh-Nd-Rhs"/>
+                    </view>
+                    <connections>
+                        <outlet property="switchA" destination="80I-kJ-9dk" id="VRu-Zp-WB7"/>
+                        <outlet property="switchB" destination="F1y-Xn-zX2" id="0HF-ty-O7E"/>
+                        <outlet property="switchC" destination="uGo-Ba-kvT" id="qZK-jh-lww"/>
+                        <outlet property="switchD" destination="Yeg-8x-4eJ" id="Hpj-lv-mQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rB7-Rg-Bfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="100"/>
+        </scene>
+    </scenes>
+</document>
