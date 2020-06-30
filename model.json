@@ -19,8 +19,14 @@
         ]
     },
     {
-        "title" : "collectionTest",
-        "class" : "collectionViewController"
-    }
+        "title" : "View",
+        "sub" : [
+            {
+                "title" : "引导页",
+                "storyboard" : "Tool",
+                "class" : "TipViewController"
+            },
+        ]
+    },
 ]
 

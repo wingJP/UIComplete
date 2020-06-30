@@ -77,5 +77,55 @@
             </objects>
             <point key="canvasLocation" x="-358" y="100"/>
         </scene>
+        <!--Tip View Controller-->
+        <scene sceneID="MQA-nq-ajT">
+            <objects>
+                <viewController storyboardIdentifier="TipViewController" id="4T2-be-wOA" customClass="TipViewController" customModule="UIComplete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qe2-De-EJM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-MK-2Oa">
+                                <rect key="frame" x="319" y="150" width="24" height="25.5"/>
+                                <state key="normal" image="trash.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-t4-hSZ">
+                                <rect key="frame" x="193.5" y="438.5" width="27.5" height="19"/>
+                                <state key="normal" image="cloud" catalog="system"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1S-MH-Prn">
+                                <rect key="frame" x="234" y="767" width="160" height="64"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="PL4-gE-y8d"/>
+                                    <constraint firstAttribute="width" constant="160" id="adY-Tt-Da6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SW6-t4-hSZ" firstAttribute="centerX" secondItem="Qe2-De-EJM" secondAttribute="centerX" id="5lv-4B-mpx"/>
+                            <constraint firstItem="S1S-MH-Prn" firstAttribute="trailing" secondItem="Qe2-De-EJM" secondAttribute="trailingMargin" id="947-MO-vVB"/>
+                            <constraint firstItem="vhL-MK-2Oa" firstAttribute="top" secondItem="JuM-fm-xhh" secondAttribute="top" constant="106" id="99T-tl-OEY"/>
+                            <constraint firstItem="JuM-fm-xhh" firstAttribute="bottom" secondItem="S1S-MH-Prn" secondAttribute="bottom" constant="31" id="Cj3-qJ-qgI"/>
+                            <constraint firstItem="SW6-t4-hSZ" firstAttribute="centerY" secondItem="Qe2-De-EJM" secondAttribute="centerY" id="UOi-5d-Ntl"/>
+                            <constraint firstItem="vhL-MK-2Oa" firstAttribute="leading" secondItem="JuM-fm-xhh" secondAttribute="leading" constant="319" id="nNc-Mm-LXT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JuM-fm-xhh"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="vhL-MK-2Oa" id="sF9-LB-CVF"/>
+                        <outlet property="button2" destination="SW6-t4-hSZ" id="gMB-HC-Vy6"/>
+                        <outlet property="view1" destination="S1S-MH-Prn" id="KVJ-Mk-eNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VH0-lR-sA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398.55072463768118" y="99.776785714285708"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="cloud" catalog="system" width="64" height="42"/>
+        <image name="trash.fill" catalog="system" width="60" height="64"/>
+    </resources>
 </document>
