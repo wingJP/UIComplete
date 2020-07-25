@@ -6,6 +6,10 @@
                 "title" : "动画弹出按钮",
                 "class" : "ButtonAnimaViewController"
             },
+            {
+                "title" : "加载动画",
+                "class" : "LoadingViewController"
+            },
         ]
     },
     {

@@ -12,6 +12,9 @@
 		5271F2EC24AA3A9600DF51E6 /* UserDefineSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271F2EB24AA3A9600DF51E6 /* UserDefineSwitch.swift */; };
 		5271F2F024AB885E00DF51E6 /* TipMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271F2EF24AB885E00DF51E6 /* TipMaskView.swift */; };
 		5271F2F224AB887300DF51E6 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271F2F124AB887300DF51E6 /* TipViewController.swift */; };
+		52865C6724CC307200BF969F /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52865C6624CC307200BF969F /* LoadingViewController.swift */; };
+		52865C6924CC327B00BF969F /* PointLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52865C6824CC327B00BF969F /* PointLoadingView.swift */; };
+		52865C6B24CC38E500BF969F /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52865C6A24CC38E500BF969F /* CircularProgressView.swift */; };
 		52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB5E24010F3700C08A5F /* AppDelegate.swift */; };
 		52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB6024010F3700C08A5F /* SceneDelegate.swift */; };
 		52C8FB6324010F3700C08A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB6224010F3700C08A5F /* ViewController.swift */; };
@@ -33,6 +36,9 @@
 		5271F2EB24AA3A9600DF51E6 /* UserDefineSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefineSwitch.swift; sourceTree = "<group>"; };
 		5271F2EF24AB885E00DF51E6 /* TipMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipMaskView.swift; sourceTree = "<group>"; };
 		5271F2F124AB887300DF51E6 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		52865C6624CC307200BF969F /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		52865C6824CC327B00BF969F /* PointLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointLoadingView.swift; sourceTree = "<group>"; };
+		52865C6A24CC38E500BF969F /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		52C8FB5B24010F3700C08A5F /* UIComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8FB5E24010F3700C08A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C8FB6024010F3700C08A5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,15 @@
 			path = tipMark;
 			sourceTree = "<group>";
 		};
+		52865C6524CC2F2400BF969F /* loadingView */ = {
+			isa = PBXGroup;
+			children = (
+				52865C6824CC327B00BF969F /* PointLoadingView.swift */,
+				52865C6A24CC38E500BF969F /* CircularProgressView.swift */,
+			);
+			path = loadingView;
+			sourceTree = "<group>";
+		};
 		52C8FB5224010F3700C08A5F = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +144,9 @@
 		52C8FB76240121EF00C08A5F /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				52865C6524CC2F2400BF969F /* loadingView */,
 				52C8FB772401222100C08A5F /* ButtonAnimaViewController.swift */,
+				52865C6624CC307200BF969F /* LoadingViewController.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -265,12 +282,15 @@
 				5271F2F224AB887300DF51E6 /* TipViewController.swift in Sources */,
 				5271F2EA24AA380A00DF51E6 /* UserDefineSwitchViewController.swift in Sources */,
 				5271F2EC24AA3A9600DF51E6 /* UserDefineSwitch.swift in Sources */,
+				52865C6924CC327B00BF969F /* PointLoadingView.swift in Sources */,
 				5271F2F024AB885E00DF51E6 /* TipMaskView.swift in Sources */,
+				52865C6B24CC38E500BF969F /* CircularProgressView.swift in Sources */,
 				52C8FB7B2413E23A00C08A5F /* WAColor.swift in Sources */,
 				52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */,
 				52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */,
 				52C8FB742401185700C08A5F /* Helper.swift in Sources */,
 				52C8FB782401222100C08A5F /* ButtonAnimaViewController.swift in Sources */,
+				52865C6724CC307200BF969F /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
