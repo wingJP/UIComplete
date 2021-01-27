@@ -20,6 +20,12 @@
                 "storyboard" : "Tool",
                 "class" : "UserDefineSwitchViewController"
             },
+        ],
+        "sub" : [
+            {
+                "title" : "输入框",
+                "class" : "UserDefineSwitchViewController"
+            },
         ]
     },
     {

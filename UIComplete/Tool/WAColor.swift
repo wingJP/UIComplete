@@ -9,32 +9,23 @@ import UIKit
 
 
 extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-    
-    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1) {
+        assert(0...255 ~= red, "Invalid red component")
+        assert(0...255 ~= green, "Invalid green component")
+        assert(0...255 ~= blue, "Invalid blue component")
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
     }
-    convenience init(netHex:Int) {
-        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    
+    convenience init(hex:Int ,alpha: CGFloat = 1) {
+        self.init(
+            red:   (hex >> 16) & 0xff,
+            green: (hex >> 8 ) & 0xff,
+            blue:   hex        & 0xff,
+            alpha:  alpha
+        )
     }
     
-    convenience init(netHex:Int ,alpha: CGFloat) {
-        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff, alpha: alpha)
+    open class var random : UIColor {
+        UIColor(hue: CGFloat.random(in: 0..<1), saturation: 0.85, brightness: 0.85, alpha: 1)
     }
-    
-    open class var randomColor:UIColor{
-        get
-        {
-            let red = CGFloat(arc4random()%256)/255.0
-            let green = CGFloat(arc4random()%256)/255.0
-            let blue = CGFloat(arc4random()%256)/255.0
-            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-        }
-    }
-
 }
