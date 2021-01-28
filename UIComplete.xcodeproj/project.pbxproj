@@ -27,6 +27,7 @@
 		52C8FB7B2413E23A00C08A5F /* WAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB7A2413E23A00C08A5F /* WAColor.swift */; };
 		52C8FB7D2413E25F00C08A5F /* WAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8FB7C2413E25F00C08A5F /* WAString.swift */; };
 		6D86A770F7A06BDAD146FB5C /* libPods-UIComplete.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A23EB3E047FE632F312A3F /* libPods-UIComplete.a */; };
+		C5E66FA025C176130004E86B /* SBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E66F9F25C176130004E86B /* SBTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		52C8FB7C2413E25F00C08A5F /* WAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAString.swift; sourceTree = "<group>"; };
 		66A23EB3E047FE632F312A3F /* libPods-UIComplete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIComplete.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845179CFF6AF374CA285A321 /* Pods-UIComplete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComplete.release.xcconfig"; path = "Target Support Files/Pods-UIComplete/Pods-UIComplete.release.xcconfig"; sourceTree = "<group>"; };
+		C5E66F9F25C176130004E86B /* SBTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				52C8FB7A2413E23A00C08A5F /* WAColor.swift */,
 				52C8FB7C2413E25F00C08A5F /* WAString.swift */,
+				C5E66F9F25C176130004E86B /* SBTextField.swift */,
 				5271F2EB24AA3A9600DF51E6 /* UserDefineSwitch.swift */,
 			);
 			path = Tool;
@@ -287,6 +290,7 @@
 				52865C6B24CC38E500BF969F /* CircularProgressView.swift in Sources */,
 				52C8FB7B2413E23A00C08A5F /* WAColor.swift in Sources */,
 				52C8FB5F24010F3700C08A5F /* AppDelegate.swift in Sources */,
+				C5E66FA025C176130004E86B /* SBTextField.swift in Sources */,
 				52C8FB6124010F3700C08A5F /* SceneDelegate.swift in Sources */,
 				52C8FB742401185700C08A5F /* Helper.swift in Sources */,
 				52C8FB782401222100C08A5F /* ButtonAnimaViewController.swift in Sources */,

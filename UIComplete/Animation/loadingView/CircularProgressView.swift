@@ -12,7 +12,7 @@ class CircularProgressView: UIView, Progresssabel {
     
     lazy var progressLabel : UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(netHex: 0xEEEEEE)
+        label.textColor = UIColor(hex: 0xEEEEEE)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 24, weight: .regular)
         return label
@@ -21,7 +21,7 @@ class CircularProgressView: UIView, Progresssabel {
     /// 进度条底色
     lazy var backlayer : CALayer = {
         var layer = CALayer()
-        layer.borderColor = UIColor(netHex: 0xEEEEEE).cgColor
+        layer.borderColor = UIColor(hex: 0xEEEEEE).cgColor
         layer.borderWidth = lineWitch
         return layer
     }()
@@ -40,7 +40,7 @@ class CircularProgressView: UIView, Progresssabel {
     /// 进度条 头
     lazy var progressHeader : CALayer = {
         let progressHeader = CALayer()
-        progressHeader.backgroundColor = UIColor(netHex: 0xB077FF).cgColor
+        progressHeader.backgroundColor = UIColor(hex: 0xB077FF).cgColor
         progressHeader.cornerRadius = lineWitch / 2
         return progressHeader
     }()
@@ -55,14 +55,14 @@ class CircularProgressView: UIView, Progresssabel {
     lazy var gradientLayer1 : CAGradientLayer = {
         let gradientLayer = CAGradientLayer()
         gradientLayer.locations = [0.1,0.8]
-        gradientLayer.colors = [UIColor(netHex: 0x521CC3).cgColor,
-                                UIColor(netHex: 0x7A42DD).cgColor]
+        gradientLayer.colors = [UIColor(hex: 0x521CC3).cgColor,
+                                UIColor(hex: 0x7A42DD).cgColor]
         return gradientLayer
     }()
     lazy var gradientLayer2 : CAGradientLayer = {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor(netHex: 0xB077FF).cgColor,
-                                UIColor(netHex: 0x7A42DD).cgColor]
+        gradientLayer.colors = [UIColor(hex: 0xB077FF).cgColor,
+                                UIColor(hex: 0x7A42DD).cgColor]
         gradientLayer.locations = [0.1,0.8]
         return gradientLayer
     }()

@@ -69,7 +69,7 @@ class ButtonAnimaViewController: UIViewController {
             let button = UIButton(type: .custom)
             self.scrollView.addSubview(button)
             button.layer.cornerRadius = 30
-            button.backgroundColor = UIColor.randomColor
+            button.backgroundColor = UIColor.random
             button.snp.makeConstraints { (make) in
                 make.height.width.equalTo(60)
                 make.centerY.equalTo(self.scrollView)
