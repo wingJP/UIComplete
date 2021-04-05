@@ -36,6 +36,11 @@
                 "storyboard" : "Tool",
                 "class" : "TipViewController"
             },
+            {
+                "title" : "验证码输入框",
+                "storyboard" : "Tool",
+                "class" : "CaptchaViewController"
+            }
         ]
     },
 ]

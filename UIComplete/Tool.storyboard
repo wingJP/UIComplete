@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="TCk-fI-9kj">
-                                <rect key="frame" x="63.5" y="104" width="287.5" height="120"/>
+                                <rect key="frame" x="64" y="104" width="286.5" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sz-t6-fCt">
-                                        <rect key="frame" x="0.0" y="0.0" width="287.5" height="61"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286.5" height="61"/>
                                         <string key="text">使用enum记录开关动作
 只需继承UserDefaultsSwitchable协议
 使用位位运算记录在userdefines中</string>
@@ -59,12 +61,12 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="whh-Nd-Rhs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TCk-fI-9kj" firstAttribute="centerX" secondItem="vei-NK-Jhu" secondAttribute="centerX" id="dkI-CU-iG2"/>
                             <constraint firstItem="TCk-fI-9kj" firstAttribute="top" secondItem="whh-Nd-Rhs" secondAttribute="top" constant="60" id="qYk-fH-HJe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="whh-Nd-Rhs"/>
                     </view>
                     <connections>
                         <outlet property="switchA" destination="80I-kJ-9dk" id="VRu-Zp-WB7"/>
@@ -85,24 +87,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-MK-2Oa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-MK-2Oa">
                                 <rect key="frame" x="319" y="150" width="24" height="25.5"/>
                                 <state key="normal" image="trash.fill" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-t4-hSZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-t4-hSZ">
                                 <rect key="frame" x="193.5" y="438.5" width="27.5" height="19"/>
                                 <state key="normal" image="cloud" catalog="system"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1S-MH-Prn">
                                 <rect key="frame" x="234" y="767" width="160" height="64"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="PL4-gE-y8d"/>
                                     <constraint firstAttribute="width" constant="160" id="adY-Tt-Da6"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JuM-fm-xhh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SW6-t4-hSZ" firstAttribute="centerX" secondItem="Qe2-De-EJM" secondAttribute="centerX" id="5lv-4B-mpx"/>
                             <constraint firstItem="S1S-MH-Prn" firstAttribute="trailing" secondItem="Qe2-De-EJM" secondAttribute="trailingMargin" id="947-MO-vVB"/>
@@ -111,7 +114,6 @@
                             <constraint firstItem="SW6-t4-hSZ" firstAttribute="centerY" secondItem="Qe2-De-EJM" secondAttribute="centerY" id="UOi-5d-Ntl"/>
                             <constraint firstItem="vhL-MK-2Oa" firstAttribute="leading" secondItem="JuM-fm-xhh" secondAttribute="leading" constant="319" id="nNc-Mm-LXT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JuM-fm-xhh"/>
                     </view>
                     <connections>
                         <outlet property="button1" destination="vhL-MK-2Oa" id="sF9-LB-CVF"/>
@@ -123,9 +125,48 @@
             </objects>
             <point key="canvasLocation" x="398.55072463768118" y="99.776785714285708"/>
         </scene>
+        <!--Captcha View Controller-->
+        <scene sceneID="pt0-LV-W6U">
+            <objects>
+                <viewController storyboardIdentifier="CaptchaViewController" id="Oxh-ot-746" customClass="CaptchaViewController" customModule="UIComplete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Hd-EA-tQC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOS-01-m92" customClass="CaptchaTextField" customModule="UIComplete" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="194" width="331" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Kep-IE-Jxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vLa-hl-Mif"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AOS-01-m92" firstAttribute="width" secondItem="7Hd-EA-tQC" secondAttribute="width" multiplier="0.8" id="QIQ-Vs-jrg"/>
+                            <constraint firstItem="AOS-01-m92" firstAttribute="centerX" secondItem="7Hd-EA-tQC" secondAttribute="centerX" id="SqR-MG-VJZ"/>
+                            <constraint firstItem="AOS-01-m92" firstAttribute="centerY" secondItem="7Hd-EA-tQC" secondAttribute="centerY" multiplier="0.5" id="u4s-0r-HdS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="AOS-01-m92" id="CYH-CW-inH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Guh-ay-AxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="-574"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="cloud" catalog="system" width="64" height="42"/>
-        <image name="trash.fill" catalog="system" width="60" height="64"/>
+        <image name="cloud" catalog="system" width="128" height="87"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
