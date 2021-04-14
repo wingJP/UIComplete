@@ -40,6 +40,11 @@
                 "title" : "验证码输入框",
                 "storyboard" : "Tool",
                 "class" : "CaptchaViewController"
+            },
+            {
+                "title" : "输入框代码",
+                "storyboard" : "Tool",
+                "class" : "TextFieldTableViewController"
             }
         ]
     },
