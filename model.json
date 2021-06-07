@@ -48,5 +48,9 @@
             }
         ]
     },
+    {
+        "title" : "字体",
+        "class" : "FontTableViewController",
+    },
 ]
 

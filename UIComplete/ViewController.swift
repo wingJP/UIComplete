@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
             let path = jsonPath,
             let arr = jsonToArray(path: path) {
             cellArray = arr
-            self.tableView.reloadData()
+//            self.tableView.reloadData()
         }
         self.tableView.tableFooterView = UIView()
         

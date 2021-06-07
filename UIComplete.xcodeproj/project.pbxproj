@@ -31,6 +31,7 @@
 		6D86A770F7A06BDAD146FB5C /* libPods-UIComplete.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A23EB3E047FE632F312A3F /* libPods-UIComplete.a */; };
 		C5E66FA025C176130004E86B /* WATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E66F9F25C176130004E86B /* WATextField.swift */; };
 		D02E5A152627324A0058788A /* TextFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E5A142627324A0058788A /* TextFieldTableViewController.swift */; };
+		D0C5AF2C266E625B0007C0C6 /* FontTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5AF2B266E625B0007C0C6 /* FontTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		845179CFF6AF374CA285A321 /* Pods-UIComplete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComplete.release.xcconfig"; path = "Target Support Files/Pods-UIComplete/Pods-UIComplete.release.xcconfig"; sourceTree = "<group>"; };
 		C5E66F9F25C176130004E86B /* WATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WATextField.swift; sourceTree = "<group>"; };
 		D02E5A142627324A0058788A /* TextFieldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewController.swift; sourceTree = "<group>"; };
+		D0C5AF2B266E625B0007C0C6 /* FontTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				52C8FB6724010F3A00C08A5F /* Assets.xcassets */,
 				52C8FB6924010F3A00C08A5F /* LaunchScreen.storyboard */,
 				52C8FB6C24010F3A00C08A5F /* Info.plist */,
+				D0C5AF2B266E625B0007C0C6 /* FontTableViewController.swift */,
 			);
 			path = UIComplete;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				52C8FB7D2413E25F00C08A5F /* WAString.swift in Sources */,
 				52C8FB6324010F3700C08A5F /* ViewController.swift in Sources */,
+				D0C5AF2C266E625B0007C0C6 /* FontTableViewController.swift in Sources */,
 				523EAB5325FFA1DA002851D6 /* CaptchaViewController.swift in Sources */,
 				5271F2F224AB887300DF51E6 /* TipViewController.swift in Sources */,
 				5271F2EA24AA380A00DF51E6 /* UserDefineSwitchViewController.swift in Sources */,
