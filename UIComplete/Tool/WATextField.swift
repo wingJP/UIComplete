@@ -81,9 +81,22 @@ class WATextField: UITextField, UITextFieldDelegate, TextValidationable {
         let count = textFieldText.count - substringToReplace.count + string.count
         return count <= (maxLength ?? Int.max)
     }
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//
-//    }
+    
+    // 监听输入框修改, 忽略高亮部分
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if let range = range, let toBeString = textField.text {
+            let selectedRange = textField.markedTextRange
+            //获取高亮部分
+            var position: UITextPosition? = nil
+            if let start = selectedRange?.start {
+                position = textField.position(from: start, offset: 0)
+            }
+            // 没有高亮选择的字，则对已输入的文字进行字数统计和裁剪
+            if position == nil, toBeString.count > range.upperBound {
+                textField.text = String(toBeString[toBeString.startIndex..<toBeString.index(toBeString.startIndex, offsetBy: max(0, range.upperBound))])
+            }
+        }
+    }
 }
 
 
